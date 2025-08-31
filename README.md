@@ -10,3 +10,4 @@ Cons
 Versatility: We target runs exclusively, ignoring substrings or statistical redundancies
 Compression Ratio: For general or random data, our RLE yields modest savings (ratios near 1.0, or even slight inflation due to flags).
 Overhead and Edge Cases: Escaping adds minor bloat (up to 2x on adversarial data with many 254/255 bytes), whereas modern compressors like Snappy or Zstd minimize this through adaptive techniques.
+![img](https://github.com/user-attachments/assets/c16ad827-8493-4028-b70b-9b3b9d22f7af)
