@@ -6,10 +6,10 @@ A modular Rust library for efficient custom data compression and decompression.
 
 
 ## Pros
-Superior Simplicity and Speed:Unlike gzip or Brotli, which employ sliding-window dictionaries (LZ77/LZ78 variants) and Huffman/entropy coding, our method requires no complex state tracking or probabilistic modeling. Compression and decompression are linear-time operations (O(n)), making it blazingly fast—often orders of magnitude quicker than DEFLATE on large datasets.
-Reliability on Repetitive Data:outperforms generic algorithms on highly redundant inputs, such as uncompressed images
-Modularity and Extensibility:As a library, it's primed for evolution—future variants could integrate dictionaries or hybrid methods. Compared to black-box tools like zip, our open design invites customization
-Efficiency in Niche Scenarios:On data with long runs (e.g., 100+ identical bytes), it can surpass LZ4's lightweight mode in ratio while maintaining comparable speed.
+**Superior Simplicity and Speed**:Unlike gzip or Brotli, which employ sliding-window dictionaries (LZ77/LZ78 variants) and Huffman/entropy coding, our method requires no complex state tracking or probabilistic modeling.Compression and decompression are linear-time operations (O(n)), making it blazingly fast—often orders of magnitude quicker than DEFLATE on large datasets.
+**Reliability on Repetitive Data**:outper forms generic algorithms on highly redundant inputs, such as uncompressed images
+**Modularity and Extensibility**:As a library, it's primed for evolution—future variants could integrate dictionaries or hybrid methods. Compared to black-box tools like zip, our open design invites customization
+**Efficiency in Niche Scenarios**:On data with long runs (e.g., 100+ identical bytes), it can surpass LZ4's lightweight mode in ratio while maintaining comparable speed.
 
 ## Cons
 Versatility: We target runs exclusively, ignoring substrings or statistical redundancies
